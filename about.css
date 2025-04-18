@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://www.iciciprulife.com/content/icici-prudential-life-insurance/testing/tools-and-calculators/bmi_assets/images/calcBG.svg") repeat-y;
+    background-size: cover;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.meet {
+    font-family: "Afacad Flux", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    /* border: 2px solid; */
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+    margin-top: 56px;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.card_common {
+    border: 1px solid #ae2b30;
+    width: 277px;
+    height: 339px;
+    border-radius: 15px;
+    background-color: #f9d3bb;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px rgba(127, 95, 130, 0.37);
+    transition: all 0.2s ease;
+}
+
+.pfp {
+    margin: 1px auto;
+    /* border: 1px solid; */
+    text-align: center;
+    padding-top: 26px;
+}
+
+.pfp img {
+    border: 1px solid #ae2b30;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    object-position: 74% 9%;
+    scale: 1.2;
+}
+
+.cards-info {
+    text-align: right;
+    font-family: "Afacad Flux", sans-serif;
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #605050;
+    padding-right: 25px;
+}
+
+.info-parent {
+    margin-top: 26px;
+}
+
+.card_common:hover {
+    transform: scale(1.1);
+
+    .cards-info {
+        color: rgb(59, 55, 55);
+    }
+}
+
+.card_common{
+    animation-name: cards-anim;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes cards-anim {
+    from{
+        position: relative;
+        bottom: 30px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
